@@ -2,6 +2,8 @@
 build/
 .cortex/
 neurons/
+css/
+html/
 
 # Numerous always-ignore extensions
 *.bak
