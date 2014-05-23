@@ -13,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/cortexjs/cortex-hybrid-sample/issues"
   },
-  "homepage": "https://github.com/cortexjs/cortex-hybrid-sample"
+  "homepage": "https://github.com/cortexjs/cortex-hybrid-sample",
+  "dependencies": {
+    "gulp": "~3.6.2"
+  }
 }

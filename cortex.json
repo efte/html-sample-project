@@ -4,7 +4,12 @@
   "description": "Cortex sample project for hybrid applications",
   "main": "index.js",
   "repository": "https://github.com/cortexjs/cortex-hybrid-sample",
-  "keywords": [],
+  "keywords": [
+    "cortex",
+    "sample",
+    "project",
+    "hybrid"
+  ],
   "license": "MIT",
   "author": {
     "name": "kael",
@@ -14,8 +19,15 @@
     "url": "https://github.com/cortexjs/cortex-hybrid-sample/issues"
   },
   "homepage": "https://github.com/cortexjs/cortex-hybrid-sample",
+  "directories": {
+    "template": "template",
+    "css": "css"
+  },
   "devDependencies": {
     "neuron": "*",
     "assert": "*"
+  },
+  "scripts": {
+    "prebuild": "./node_modules/.bin/gulp"
   }
 }
