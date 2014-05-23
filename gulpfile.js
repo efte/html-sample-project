@@ -4,8 +4,8 @@ var gulp = require('gulp');
 var stylus = require('gulp-stylus');
 var jade = require('gulp-jade');
 var changed = require('gulp-changed');
+var mixins = require('gulp-cortex-jade-mixins');
 var nib = require('nib');
-// var connect = require('gulp-connect');
 
 gulp.task('stylus', function() {
   var stylusOptions = {
@@ -28,6 +28,7 @@ gulp.task('jade', function() {
   .pipe(changed('template/', {
     extension: '.html'
   }))
+  .pipe(mixins())
   .pipe(jade())
   .pipe(gulp.dest("template/"));
 });
