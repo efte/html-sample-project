@@ -3,7 +3,7 @@ build/
 .cortex/
 neurons/
 css/
-html/
+template/
 
 # Numerous always-ignore extensions
 *.bak

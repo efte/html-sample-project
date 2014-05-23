@@ -23,13 +23,13 @@ gulp.task('stylus', function() {
 gulp.task('jade', function() {
   var source = gulp
   .src([
-    "template/*.html"
+    "jade/*.jade"
   ])
-  .pipe(changed('html/', {
+  .pipe(changed('template/', {
     extension: '.html'
   }))
   .pipe(jade())
-  .pipe(gulp.dest("html/"));
+  .pipe(gulp.dest("template/"));
 });
 
 gulp.task('default', ['stylus','jade']);

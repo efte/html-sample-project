@@ -18,8 +18,8 @@
 
 // `exports` is the API of the current module,
 // If another module `require('cortex-hybrid-sample')`, it returns `exports`
-exports.my_method = function() {
-    // your code...
+exports.init = function() {
+  console.log('hello world');
 };
 
 // or you could code like this:
