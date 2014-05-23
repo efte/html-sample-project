@@ -1,0 +1,17 @@
+{
+  "name": "cortex-hybrid-sample",
+  "version": "0.1.0",
+  "description": "Cortex sample project for hybrid applications",
+  "main": "index.js",
+  "repository": "https://github.com/cortexjs/cortex-hybrid-sample",
+  "keywords": [],
+  "license": "MIT",
+  "author": {
+    "name": "kael",
+    "email": "i@kael.me"
+  },
+  "bugs": {
+    "url": "https://github.com/cortexjs/cortex-hybrid-sample/issues"
+  },
+  "homepage": "https://github.com/cortexjs/cortex-hybrid-sample"
+}
