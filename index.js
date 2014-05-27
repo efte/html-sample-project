@@ -16,10 +16,16 @@
 // var $ = require('jquery');
 // ```
 
+var $ = require('jquery');
+
 // `exports` is the API of the current module,
 // If another module `require('cortex-hybrid-sample')`, it returns `exports`
 exports.init = function() {
-  console.log('hello world');
+  require.async('util', function(util) {
+    console.log(util.isNumber(4));
+  });
+  
+  $('body').html('hello world');
 };
 
 // or you could code like this:

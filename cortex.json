@@ -19,6 +19,9 @@
     "url": "https://github.com/cortexjs/cortex-hybrid-sample/issues"
   },
   "homepage": "https://github.com/cortexjs/cortex-hybrid-sample",
+  "engines": {
+    "neuron": "~5.0.0"
+  },
   "directories": {
     "template": "template",
     "css": "css"
@@ -27,7 +30,6 @@
     "neuron": "~5.0.0"
   },
   "devDependencies": {
-    "neuron": "*",
     "assert": "*"
   },
   "scripts": {
@@ -35,5 +37,8 @@
   },
   "dependencies": {
     "jquery": "~1.9.2"
+  },
+  "asyncDependencies": {
+    "util": "~1.0.5"
   }
 }
