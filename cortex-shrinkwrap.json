@@ -1,6 +1,12 @@
 {
   "name": "cortex-hybrid-sample",
   "version": "0.1.0",
+  "engines": {
+    "neuron": {
+      "from": "neuron@*",
+      "version": "5.1.0-beta"
+    }
+  },
   "dependencies": {
     "util": {
       "from": "util@~1.0.5",
