@@ -19,6 +19,10 @@
 // `exports` is the API of the current module,
 // If another module `require('cortex-hybrid-sample')`, it returns `exports`
 exports.init = function() {
+  require.async('util', function(util) {
+    util.isNumber(4);
+  });
+  
   console.log('hello world');
 };
 

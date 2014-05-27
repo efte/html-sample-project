@@ -29,5 +29,8 @@
   },
   "scripts": {
     "prebuild": "./node_modules/.bin/gulp"
+  },
+  "asyncDependencies": {
+    "util": "~1.0.5"
   }
 }
