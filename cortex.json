@@ -23,11 +23,17 @@
     "template": "template",
     "css": "css"
   },
+  "engines": {
+    "neuron": "~5.0.0"
+  },
   "devDependencies": {
     "neuron": "*",
     "assert": "*"
   },
   "scripts": {
     "prebuild": "./node_modules/.bin/gulp"
+  },
+  "dependencies": {
+    "jquery": "~1.9.2"
   }
 }
