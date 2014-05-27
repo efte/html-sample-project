@@ -14,12 +14,13 @@
     "url": "https://github.com/cortexjs/cortex-hybrid-sample/issues"
   },
   "homepage": "https://github.com/cortexjs/cortex-hybrid-sample",
-  "dependencies": {
+  "devDependencies": {
     "gulp": "~3.6.2",
     "gulp-jade": "~0.5.0",
     "gulp-changed": "~0.3.0",
     "gulp-stylus": "~1.0.1",
     "nib": "~1.0.2",
-    "gulp-cortex-jade-mixins": "~0.1.0"
+    "gulp-cortex-jade-mixins": "~0.1.0",
+    "gulp-cortex-handlebars-compiler": "~0.1.0"
   }
 }

@@ -5,6 +5,7 @@ var stylus = require('gulp-stylus');
 var jade = require('gulp-jade');
 var changed = require('gulp-changed');
 var mixins = require('gulp-cortex-jade-mixins');
+var compiler = require('gulp-cortex-handlebars-compiler');
 var nib = require('nib');
 
 gulp.task('stylus', function() {
@@ -21,7 +22,7 @@ gulp.task('stylus', function() {
 });
 
 gulp.task('jade', function() {
-  var source = gulp
+  gulp
   .src([
     "jade/*.jade"
   ])
@@ -30,6 +31,10 @@ gulp.task('jade', function() {
   }))
   .pipe(mixins())
   .pipe(jade())
+  .pipe(compiler({
+    // `cortex build` might be executed inside a sub directory
+    cwd: __dirname
+  }).compile())
   .pipe(gulp.dest("template/"));
 });
 
