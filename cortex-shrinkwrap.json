@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "engines": {
     "neuron": {
-      "from": "neuron@*",
-      "version": "5.0.0"
+      "from": "neuron@~5.1.0",
+      "version": "5.1.0"
     }
   },
   "dependencies": {
@@ -13,8 +13,8 @@
       "version": "1.9.2"
     },
     "util": {
-      "from": "util@~1.0.5",
-      "version": "1.0.5-prelease",
+      "from": "util@~1.0.4",
+      "version": "1.0.4",
       "dependencies": {
         "json": {
           "from": "json@~1.0.0",
