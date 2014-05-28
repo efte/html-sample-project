@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# install node.js dependencies
+npm install
+
 # create a new profile of settings for this project
 cortex profile add hybrid
 # use it
