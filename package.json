@@ -21,6 +21,6 @@
     "gulp-stylus": "^1.0.1",
     "nib": "^1.0.2",
     "gulp-cortex-jade-mixins": "^0.1.0",
-    "gulp-cortex-handlebars-compiler": "^0.1.0"
+    "gulp-cortex-handlebars-compiler": "^0.2.0"
   }
 }
