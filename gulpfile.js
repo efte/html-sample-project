@@ -13,7 +13,7 @@ gulp.task('stylus', function() {
     use: [nib()],
     import: ["nib"]
   };
-  gulp.src(["stylus/*.styl"])
+  gulp.src(["stylus/**/*.styl"])
     .pipe(changed('css/', {
       extension: '.css'
     }))
@@ -24,7 +24,7 @@ gulp.task('stylus', function() {
 gulp.task('jade', function() {
   gulp
   .src([
-    "jade/*.jade"
+    "jade/**/*.jade"
   ])
   .pipe(changed('template/', {
     extension: '.html'
