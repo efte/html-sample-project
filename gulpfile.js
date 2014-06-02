@@ -21,6 +21,8 @@ gulp.task('stylus', function() {
     .pipe(gulp.dest('css/'));
 });
 
+console.log(process.env);
+
 gulp.task('jade', function() {
   gulp
   .src([
@@ -33,7 +35,10 @@ gulp.task('jade', function() {
   .pipe(jade())
   .pipe(compiler({
     // `cortex build` might be executed inside a sub directory
-    cwd: __dirname
+    cwd       : __dirname,
+    href_root : process.env.CORTEX_EFTE_HREF_ROOT,
+    js_ext    : process.env.CORTEX_EFTE_JS_EXT || '.js'
+
   }).compile())
   .pipe(gulp.dest("template/"));
 });

@@ -25,7 +25,7 @@ exports.init = function() {
     console.log(util.isNumber(4));
   });
   
-  $('body').html('hello world');
+  $('<div>').html('hello world').appendTo('body');
 };
 
 // or you could code like this:
