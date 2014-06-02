@@ -21,8 +21,6 @@ gulp.task('stylus', function() {
     .pipe(gulp.dest('css/'));
 });
 
-console.log(process.env);
-
 gulp.task('jade', function() {
   gulp
   .src([
