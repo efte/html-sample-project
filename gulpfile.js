@@ -13,9 +13,6 @@ gulp.task('stylus', function() {
     import: ["nib"]
   };
   gulp.src(["stylus/**/*.styl"])
-    .pipe(changed('css/', {
-      extension: '.css'
-    }))
     .pipe(stylus(stylusOptions))
     .pipe(gulp.dest('css/'));
 });
