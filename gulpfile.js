@@ -29,7 +29,7 @@ gulp.task('jade', function() {
     cwd       : __dirname,
     href_root : process.env.CORTEX_EFTE_HREF_ROOT,
     js_ext    : process.env.CORTEX_EFTE_JS_EXT || '.js',
-    css_ext   : process.env.CORTEx_EFTE_CSS_EXT || '.css'
+    css_ext   : process.env.CORTEX_EFTE_CSS_EXT || '.css'
 
   }).compile())
   .pipe(gulp.dest("template/"));
