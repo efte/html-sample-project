@@ -3,7 +3,6 @@
 var gulp = require('gulp');
 var stylus = require('gulp-stylus');
 var jade = require('gulp-jade');
-var changed = require('gulp-changed');
 var mixins = require('gulp-cortex-jade-mixins');
 var compiler = require('gulp-cortex-handlebars-compiler');
 var nib = require('nib');
@@ -26,16 +25,14 @@ gulp.task('jade', function() {
   .src([
     "jade/**/*.jade"
   ])
-  .pipe(changed('template/', {
-    extension: '.html'
-  }))
   .pipe(mixins())
   .pipe(jade())
   .pipe(compiler({
     // `cortex build` might be executed inside a sub directory
     cwd       : __dirname,
     href_root : process.env.CORTEX_EFTE_HREF_ROOT,
-    js_ext    : process.env.CORTEX_EFTE_JS_EXT || '.js'
+    js_ext    : process.env.CORTEX_EFTE_JS_EXT || '.js',
+    css_ext   : process.env.CORTEx_EFTE_CSS_EXT || '.css'
 
   }).compile())
   .pipe(gulp.dest("template/"));
